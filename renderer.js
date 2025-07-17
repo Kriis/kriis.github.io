@@ -1,5 +1,5 @@
 const container = document.getElementById('container')
-const shellPrompt = "<span style=\"display:inline; color:#5BE44C;\">$</span>&nbsp;"
+const shellPrompt = "<span style=\"display:inline; color:#5BE44C;\">></span>&nbsp;"
 
 let terminal = document.createElement("div")
 
