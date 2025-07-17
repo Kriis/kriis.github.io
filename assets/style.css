@@ -21,3 +21,54 @@ body {
     outline: none;
     display: flex; /* Use Flexbox to handle the layout */
 }
+
+
+input{
+    border:none;
+    outline:none;
+    display:inline-block;
+    vertical-align:middle;
+    position:relative;
+    background: #161616;
+    width:100%;
+    box-sizing:border-box;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+.terminal {
+    flex: 1; /* Allow terminal to expand and fill the container */
+    /* background: #1d2026; */
+    background: #000;
+    color: white;
+    outline: none;
+    overflow: auto; /* Enable scrollbars if content overflows */
+    box-sizing: border-box;
+    border: 2px solid rgba(139, 136, 136, 0.5); /* Add a border with a semi-transparent color */
+    border-radius: 4px; /* Optional: add rounded corners to the border */
+    overflow-y: auto;
+    border-color: #FFF;
+    padding: 5px;
+    margin: 2px;
+    -webkit-app-region: no-drag;
+}
+
+.terminal:focus {
+    border-color: #5BE44C;
+}
+  
+/* Scrollbar styles for .terminal */
+.terminal::-webkit-scrollbar {
+    width: 12px;  /* for vertical scrollbars */
+    height: 12px; /* for horizontal scrollbars */
+}
+  
+.terminal::-webkit-scrollbar-track {
+    background: #1d2026; /* Background color of the scrollbar track */
+}
+  
+.terminal::-webkit-scrollbar-thumb {
+    background: rgba(139, 136, 136, 0.5); /* Color of the scrollbar thumb */
+  
