@@ -15,8 +15,8 @@ function printBanner(terminal) {
 	<p contenteditable="false">██╔══╝&nbsp&nbsp██╔══██║╚════██║&nbsp&nbsp╚██╔╝&nbsp&nbsp</p>
 	<p contenteditable="false">███████╗██║&nbsp&nbsp██║███████║&nbsp&nbsp&nbsp██║&nbsp&nbsp&nbsp</p>
 	<p contenteditable="false">╚══════╝╚═╝&nbsp&nbsp╚═╝╚══════╝&nbsp&nbsp&nbsp╚═╝&nbsp&nbsp&nbsp</p>
-	<p contenteditable="false">Welcome to AnhLe's Page</p>`
-	<p>${shellPrompt}</p>
+	<p contenteditable="false">Welcome to AnhLe's Page</p>
+	<p>${shellPrompt}</p>`
 }
 
 
