@@ -71,4 +71,8 @@ input{
   
 .terminal::-webkit-scrollbar-thumb {
     background: rgba(139, 136, 136, 0.5); /* Color of the scrollbar thumb */
-  
+}
+
+p { 
+    margin: 2px; /* Margin for paragraphs */
+}
