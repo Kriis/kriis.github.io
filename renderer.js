@@ -1,4 +1,5 @@
 const container = document.getElementById('container')
+const shellPrompt = "<span style=\"display:inline; color:#5BE44C;\">$</span>&nbsp;"
 
 let terminal = document.createElement("div")
 
@@ -14,10 +15,17 @@ function printBanner(terminal) {
 	<p contenteditable="false">██╔══╝&nbsp&nbsp██╔══██║╚════██║&nbsp&nbsp╚██╔╝&nbsp&nbsp</p>
 	<p contenteditable="false">███████╗██║&nbsp&nbsp██║███████║&nbsp&nbsp&nbsp██║&nbsp&nbsp&nbsp</p>
 	<p contenteditable="false">╚══════╝╚═╝&nbsp&nbsp╚═╝╚══════╝&nbsp&nbsp&nbsp╚═╝&nbsp&nbsp&nbsp</p>
-	<p contenteditable="false">Welcome to easy Terminal</p>`
+	<p contenteditable="false">Welcome to AnhLe's Page</p>`
+	<p>${shellPrompt}</p>
+}
+
+
+function setFocus(terminal) {
+	terminal.focus()
 }
 
 printBanner(terminal)
 
 container.appendChild(terminal)
 
+setFocus(terminal)
