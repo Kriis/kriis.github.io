@@ -32,16 +32,16 @@ function putCursorAtEnd(term) {
 
 function printInfo(term) {
 	term.innerHTML += `
-	<p contenteditable="false">&nbsp&nbsp Senior Embedded Dev with 10+ years of experience</p>
-	<p contenteditable="false">&nbsp&nbsp I just love coding and embedded systems!!!!!!!!!!!!!!!</p>
-	<p contenteditable="false">&nbsp&nbsp Problem solver and quick adapter person.</p>
-	<p contenteditable="false">&nbsp&nbsp Things I do: Autosar, Hardware Secure Module(HSM), Bootloader, IoT, BLE, Linux, RTOS....</p>
+	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Senior Embedded Dev with 10+ years of experience</p>
+	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp I just love coding and embedded systems!!!!!!!!!!!!!!!</p>
+	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Problem solver and quick adapter person.</p>
+	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Things I do: Autosar, Hardware Secure Module(HSM), Bootloader, IoT, BLE, Linux, RTOS....</p>
 	`
 }
 
 function printEdu(term) {
 	term.innerHTML += `
-	<p contenteditable="false">&nbsp&nbsp Computer Enginnering</p>
+	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Computer Enginnering</p>
 	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp HCM University of Technology and Education</p>
 	`
 }
