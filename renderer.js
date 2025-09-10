@@ -35,7 +35,8 @@ function printInfo(term) {
 	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Senior Embedded Dev with 10+ years of experience</p>
 	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp I just love coding and embedded systems!!!!!!!!!!!!!!!</p>
 	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Problem solver and quick adapter person.</p>
-	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Things I do: Autosar, Hardware Secure Module(HSM), Bootloader, IoT, BLE, Linux, RTOS....</p>
+	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Techincals: Autosar, Hardware Secure Module(HSM), Bootloader, IoT, BLE, Linux, RTOS....</p>
+	<p contenteditable="false">&nbsp&nbsp&nbsp&nbsp Hobbies: Food lover, Amateur Photographer....</p>
 	`
 }
 
