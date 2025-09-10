@@ -131,6 +131,9 @@ class Terminal {
 			}
 			createNewPrompt(this)
 		}
+		else if(evt.key === "Backspace" || evt.key === "ArrowLeft") {
+			evt.preventDefault()
+		}
 	}
 
 
