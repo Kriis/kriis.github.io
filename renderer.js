@@ -172,3 +172,82 @@ function createNewTerm(location) {
 if(container.hasChildNodes() === false) {
 	createNewTerm("center")
 }
+
+function getActiveElementIdx(container) {
+    let numberOfChilds = container.children.length
+    let children = container.children
+    let i
+    for(i = 0; i < numberOfChilds; i++) {
+        let child = children[i]
+        if(child === document.activeElement) {
+            break
+        }
+    }
+    return i
+}
+
+function getActiveElement(container) {
+    let numberOfChilds = container.children.length
+    let children = container.children
+    let i
+    let child 
+    for(i = 0; i < numberOfChilds; i++) {
+        child = children[i]
+        if(child === document.activeElement) {
+            break
+        }
+    }
+
+    return child
+}
+
+
+container.onkeydown = (ev) => {
+	if (ev.keyCode === 220 && ev.ctrlKey) {
+		createNewTerm("right")
+	}
+	else if(ev.key === 'q' && ev.ctrlKey) {
+        let numberOfChilds = container.children.length
+        let children = container.children
+        let activeChild = getActiveElement(container)
+        let i = getActiveElementIdx(container)
+
+        if (numberOfChilds > 1) {
+            ev.preventDefault()
+            if(i === 0) {
+                children[i+1].focus()
+            }
+            else {
+                children[i-1].focus()
+            }
+            container.removeChild(activeChild)
+        }
+        else
+        {
+            // console.log("Close Window")
+        }
+	}
+	else if (ev.keyCode === 37 && ev.altKey) {
+		let numberOfChilds = container.children.length
+		let children = container.children
+		if(numberOfChilds === 1) {
+            return
+        }
+        let i = getActiveElementIdx(container)
+        if(i > 0) {
+            children[i-1].focus()
+        }
+	}
+	else if (ev.keyCode === 39 && ev.altKey) {
+        let numberOfChilds = container.children.length
+        let children = container.children
+        if(numberOfChilds === 1) {
+            return
+        }
+        let i = getActiveElementIdx(container)
+        // console.log(i)
+        if( i < (numberOfChilds - 1)) {
+            children[i+1].focus()
+        }
+	}
+}
