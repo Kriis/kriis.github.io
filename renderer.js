@@ -119,6 +119,8 @@ class Terminal {
 				case "edu":
 					printEdu(this)
 					break
+				case "":
+					break
 				default:
 					const error = document.createElement('p');
 					error.setAttribute("contenteditable", "false")
