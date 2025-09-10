@@ -222,12 +222,9 @@ container.onkeydown = (ev) => {
             }
             container.removeChild(activeChild)
         }
-        else
-        {
-            // console.log("Close Window")
-        }
 	}
 	else if (ev.keyCode === 37 && ev.altKey) {
+		// move left
 		let numberOfChilds = container.children.length
 		let children = container.children
 		if(numberOfChilds === 1) {
@@ -239,6 +236,7 @@ container.onkeydown = (ev) => {
         }
 	}
 	else if (ev.keyCode === 39 && ev.altKey) {
+		// move right
         let numberOfChilds = container.children.length
         let children = container.children
         if(numberOfChilds === 1) {
